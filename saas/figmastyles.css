@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+}
+.layer0 {
+  background-color: #f5f6f8;
+  display: flex;
+}
+.sidebar_layer1 {
+  border: red 2px solid;
+  height: 100vh;
+  width: 179px;
+}
+.mainpage_layer1 {
+  border: blue 2px solid;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.mainpage_layer1 > *:nth-child(1) {
+  flex: 0 0 10%;
+}
+.mainpage_layer1 > *:nth-child(2) {
+  flex: 0 0 90%;
+}
+.searchbar_layer2 {
+  border: red 2px solid;
+  width: 100;
+  height: 100px;
+}
+.mainbar_layer2 {
+  border: rgb(255, 0, 157) 2px solid;
+  width: 100;
+  height: 100px;
+  display: flex;
+}
+.mainbar_layer2 > *:nth-child(1) {
+  flex: 0 0 60%;
+}
+.mainbar_layer2 > *:nth-child(2) {
+  flex: 0 0 40%;
+}
+.calender_layer3 {
+  border: rgb(11, 128, 0) solid 2px;
+  width: 50px;
+  height: 100;
+}
+.deals-task_layer3 {
+  border: rgb(128, 58, 0) solid 2px;
+  width: 50px;
+  height: 100;
+  display: flex;
+  flex-direction: column;
+}
+.deals-task_layer3 > *:nth-child(1) {
+  flex: 0 0 50%;
+}
+.deals-task_layer3 > *:nth-child(2) {
+  flex: 0 0 50%;
+}
+.deals_layer4 {
+  border: rgb(0, 113, 128) solid 2px;
+}
+.task_layer4 {
+  border: rgb(128, 0, 0) solid 2px;
+}
