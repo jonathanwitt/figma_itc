@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  border: blue 1px solid;
 }
 
 html,
@@ -16,14 +18,31 @@ body {
 .sidebar_layer1 {
   border: red 2px solid;
   height: 100vh;
-  width: 179px;
+  flex-basis: 15%;
+  display: flex;
+  flex-direction: column;
+}
+.sidebarTop_layer2 {
+  flex-basis: 50%;
+}
+.SaaSKit {
+  color: #109cf1;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.sidebarBottom_layer2 {
+  flex-basis: 50%;
 }
 .mainpage_layer1 {
   border: blue 2px solid;
   flex: 1;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 .mainpage_layer1 > *:nth-child(1) {
   flex: 0 0 10%;
@@ -35,6 +54,7 @@ body {
   border: red 2px solid;
   width: 100;
   height: 100px;
+  display: flex;
 }
 .mainbar_layer2 {
   border: rgb(255, 0, 157) 2px solid;
@@ -52,7 +72,32 @@ body {
   border: rgb(11, 128, 0) solid 2px;
   width: 50px;
   height: 100;
+  display: flex;
+  flex-direction: column;
 }
+.calenderTop_layer4 {
+  border: black 2px solid;
+  flex-basis: 40%;
+}
+.calenderBottom_layer4 {
+  border: rgb(219, 87, 87) 2px solid;
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.reminderbar_layer5 {
+  border: rgb(84, 52, 175) 2px solid;
+  flex-basis: 33.3%;
+}
+.callbar_layer5 {
+  border: rgb(69, 153, 31) 2px solid;
+  flex-basis: 33.3%;
+}
+.eventbar_layer5 {
+  border: rgb(35, 136, 131) 2px solid;
+  flex-basis: 33.3%;
+}
+
 .deals-task_layer3 {
   border: rgb(128, 58, 0) solid 2px;
   width: 50px;
