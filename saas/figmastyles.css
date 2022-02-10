@@ -3,20 +3,23 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: blue 1px solid;
+  border: blue px solid;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 html,
 body {
   height: 100vh;
   width: 100vw;
+  border: black 2px;
 }
 .layer0 {
   background-color: #f5f6f8;
   display: flex;
 }
 .sidebar_layer1 {
-  border: red 2px solid;
+  /* border: red 2px solid; */
   height: 100vh;
   flex-basis: 15%;
   display: flex;
@@ -24,6 +27,13 @@ body {
 }
 .sidebarTop_layer2 {
   flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.title {
+  margin-left: 5%;
+  margin-bottom: 80%;
 }
 .SaaSKit {
   color: #109cf1;
@@ -35,29 +45,80 @@ body {
   letter-spacing: 0em;
   text-align: left;
 }
+.profile {
+  display: flex;
+  flex-direction: row;
+}
+.profile_detail {
+}
+.sideboard-titles {
+  margin-left: 5%;
+}
+.dashboard {
+  display: flex;
+}
+.dashboard-svg {
+}
+.dashboard-text {
+  margin-left: 5%;
+}
+.email {
+  display: flex;
+}
+.email-svg {
+}
+.email-text {
+  margin-left: 5%;
+}
+.contacts {
+  display: flex;
+}
+.contacts-svg {
+}
+.contacts-text {
+  margin-left: 5%;
+}
+.chat {
+  display: flex;
+}
+.chat-svg {
+}
+.chat-text {
+  margin-left: 5%;
+}
+.deals {
+  display: flex;
+}
+.deals-svg {
+}
+.deals-text {
+  margin-left: 5%;
+}
+
 .sidebarBottom_layer2 {
   flex-basis: 50%;
 }
 .mainpage_layer1 {
-  border: blue 2px solid;
+  /* border: blue 2px solid; */
   flex: 1;
   display: flex;
   flex-direction: column;
 }
 .mainpage_layer1 > *:nth-child(1) {
-  flex: 0 0 10%;
+  flex: 0 0 8%;
 }
 .mainpage_layer1 > *:nth-child(2) {
-  flex: 0 0 90%;
+  flex: 1 1 92%;
+  margin: 4%;
 }
 .searchbar_layer2 {
-  border: red 2px solid;
+  /* border: red 2px solid; */
   width: 100;
   height: 100px;
   display: flex;
 }
 .mainbar_layer2 {
-  border: rgb(255, 0, 157) 2px solid;
+  /* border: rgb(255, 0, 157) 2px solid; */
   width: 100;
   height: 100px;
   display: flex;
@@ -69,51 +130,67 @@ body {
   flex: 0 0 40%;
 }
 .calender_layer3 {
-  border: rgb(11, 128, 0) solid 2px;
+  /* border: rgb(11, 128, 0) solid 2px; */
   width: 50px;
   height: 100;
   display: flex;
   flex-direction: column;
 }
 .calenderTop_layer4 {
-  border: black 2px solid;
+  /* border: black 2px solid; */
   flex-basis: 40%;
 }
 .calenderBottom_layer4 {
-  border: rgb(219, 87, 87) 2px solid;
+  /* border: rgb(219, 87, 87) 2px solid; */
   flex-basis: 60%;
   display: flex;
   flex-direction: column;
 }
 .reminderbar_layer5 {
-  border: rgb(84, 52, 175) 2px solid;
+  /* border: rgb(84, 52, 175) 2px solid; */
   flex-basis: 33.3%;
+  margin: 4% 4% 2% 4%;
 }
 .callbar_layer5 {
-  border: rgb(69, 153, 31) 2px solid;
+  /* border: rgb(69, 153, 31) 2px solid; */
   flex-basis: 33.3%;
+  margin: 2% 4% 2% 4%;
 }
 .eventbar_layer5 {
-  border: rgb(35, 136, 131) 2px solid;
+  /* border: rgb(35, 136, 131) 2px solid; */
   flex-basis: 33.3%;
+  margin: 2% 4% 8% 4%;
 }
 
 .deals-task_layer3 {
-  border: rgb(128, 58, 0) solid 2px;
+  /* border: rgb(128, 58, 0) solid 2px; */
   width: 50px;
   height: 100;
   display: flex;
   flex-direction: column;
 }
 .deals-task_layer3 > *:nth-child(1) {
-  flex: 0 0 50%;
+  flex: 1 1 50%;
+  margin: 0 0 3% 6%;
 }
 .deals-task_layer3 > *:nth-child(2) {
-  flex: 0 0 50%;
+  flex: 1 1 50%;
+  margin: 3% 0 0 6%;
 }
 .deals_layer4 {
-  border: rgb(0, 113, 128) solid 2px;
+  /* border: rgb(0, 113, 128) solid 2px; */
+}
+.bigdeals-svg {
+  padding: 25% 4% 4% 4%;
+}
+.dealsBottom {
+}
+.dealsgraph {
+  font-size: x-small;
+}
+.closeddeals {
+  font-size: x-small;
 }
 .task_layer4 {
-  border: rgb(128, 0, 0) solid 2px;
+  /* border: rgb(128, 0, 0) solid 2px; */
 }
