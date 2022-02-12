@@ -1,9 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:wght@400;500&family=Waiting+for+the+Sunrise&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   border: blue 0px solid;
+  font-family: Poppins;
 }
 
 html,
@@ -13,7 +18,6 @@ body {
   border: black 2px;
 }
 .layer0 {
-  background-color: #f5f6f8;
   display: flex;
 }
 .sidebar_layer1 {
@@ -22,18 +26,22 @@ body {
   flex-basis: 15%;
   display: flex;
   flex-direction: column;
+  background-color: #ffffff;
 }
 .sidebarTop_layer2 {
   flex-basis: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  border-bottom: #ebeff2 solid 1px;
 }
 .title {
   margin-left: 5%;
   margin-bottom: 80%;
 }
 .SaaSKit {
+  position: relative;
+  top: 10px;
   color: #109cf1;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -42,26 +50,77 @@ body {
   font-weight: 600;
   letter-spacing: 0em;
   text-align: left;
+  padding-bottom: 12px;
+  border-bottom: #ebeff2 1px solid;
 }
 .profile {
   display: flex;
   flex-direction: row;
+  position: relative;
 }
 .profile_detail {
+  display: flex;
+  position: relative;
+  top: -106px;
+}
+.profilename {
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.profile:hover {
+  cursor: pointer;
+}
+.profileemail {
+  color: #90a0b7;
+  font-family: Poppins;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+.profileemail:hover {
+  cursor: pointer;
 }
 .sideboard-titles {
   margin-left: 5%;
+  padding-bottom: 4%;
+}
+.toggle {
+  margin-left: 5%;
+  align-items: center;
+}
+.toggi {
+  color: #90a0b7;
+  font-weight: 500;
+  font-size: 11px;
+  padding-left: 8%;
 }
 .dashboard {
   display: flex;
 }
-.dashboard-svg {
+.dashboard:hover {
+  cursor: pointer;
+  color: #109cf1;
+}
+.dashboard-svg:hover {
+  filter: #109cf1;
 }
 .dashboard-text {
   margin-left: 5%;
 }
 .email {
   display: flex;
+}
+.email:hover {
+  cursor: pointer;
+  color: #109cf1;
 }
 .email-svg {
 }
@@ -71,6 +130,10 @@ body {
 .contacts {
   display: flex;
 }
+.contacts:hover {
+  cursor: pointer;
+  color: #109cf1;
+}
 .contacts-svg {
 }
 .contacts-text {
@@ -78,6 +141,10 @@ body {
 }
 .chat {
   display: flex;
+}
+.chat:hover {
+  cursor: pointer;
+  color: #109cf1;
 }
 .chat-svg {
 }
@@ -87,6 +154,10 @@ body {
 .deals {
   display: flex;
 }
+.deals:hover {
+  cursor: pointer;
+  color: #109cf1;
+}
 .deals-svg {
 }
 .deals-text {
@@ -95,12 +166,33 @@ body {
 
 .sidebarBottom_layer2 {
   flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+.settings {
+  display: flex;
+  font-weight: 500;
+  font-size: 13px;
+  margin-left: 5%;
+  padding-top: 5%;
+}
+.settings1 {
+  margin-left: 1.5%;
+}
+.settings2 {
+  margin-left: 7%;
+}
+.toggle {
+  display: flex;
+}
+
 .mainpage_layer1 {
   /* border: blue 2px solid; */
   flex: 1;
   display: flex;
   flex-direction: column;
+  background-color: #f5f6f8;
 }
 .mainpage_layer1 > *:nth-child(1) {
   flex: 0 0 8%;
@@ -114,6 +206,16 @@ body {
   width: 100;
   height: 100px;
   display: flex;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.searchandsvg {
+  display: flex;
+}
+.searchandsvg:hover {
+  cursor: pointer;
 }
 .mainbar_layer2 {
   /* border: rgb(255, 0, 157) 2px solid; */
@@ -133,10 +235,79 @@ body {
   height: 100;
   display: flex;
   flex-direction: column;
+  background-color: #ffffff;
 }
 .calenderTop_layer4 {
   /* border: black 2px solid; */
   flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.calenderTop_layer4 * {
+  justify-content: center;
+  align-items: center;
+}
+.toptopbar {
+  display: flex;
+  flex-basis: 20%;
+  justify-content: space-between;
+  margin: 0px 12px;
+}
+.dropdownsvg {
+}
+.topbar {
+  font-weight: 500;
+  font-size: 13px;
+}
+.progressbar {
+  flex-basis: 5%;
+  margin-left: 3%;
+  display: flex;
+  margin-right: 3%;
+}
+.green {
+  flex-basis: 70%;
+  border-top: #2ed47a 4px solid;
+}
+.notgreen {
+  flex-basis: 30%;
+  border-top: #ebeff2 4px solid;
+}
+.datebar {
+  flex-basis: 25%;
+  font-weight: 500;
+  font-size: 15px;
+  margin: 0px 12px;
+  padding-top: 4px;
+  padding-bottom: 15px;
+}
+.daybar {
+  flex-basis: 50%;
+  display: flex;
+}
+.day {
+  flex-basis: 15%;
+  display: flex;
+  flex-direction: column;
+}
+
+.weekday {
+  flex-basis: 50%;
+  font-weight: 500;
+  font-size: 13px;
+  color: #96a7b9;
+}
+.date {
+  flex-basis: 50%;
+  color: grey;
+}
+.date:hover {
+  cursor: pointer;
+  color: #109cf1;
+}
+.weekday:hover {
+  cursor: pointer;
+  color: #109cf1;
 }
 .calenderBottom_layer4 {
   /* border: rgb(219, 87, 87) 2px solid; */
@@ -147,17 +318,87 @@ body {
 .reminderbar_layer5 {
   /* border: rgb(84, 52, 175) 2px solid; */
   flex-basis: 33.3%;
-  margin: 4% 4% 2% 4%;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 12px;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0px;
+}
+.event {
+  color: #323c47;
+  font-weight: 500;
+  font-size: 15px;
+}
+.tool {
+  font-size: 12px;
+  color: #96a7b9;
+}
+.eventdate {
+  display: flex;
+  padding: 0px 0 9px 0;
+}
+.duedate {
+  color: #4c5862;
+  font-size: 13px;
+}
+.duedatedue {
+  font-size: 13px;
+  padding-left: 5px;
+}
+.eventfoot {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 0px;
+}
+.eventprofilename {
+  color: #707683;
+  font-size: 13px;
+  padding-left: 10px;
+}
+.profilefoot {
+  display: flex;
+}
+.eventprofileimg {
+}
+.eventbutton-ended {
+  font-size: 11px;
+  font-weight: 500;
+  border: red 2px solid;
+  background: red;
+  border-radius: 10%;
+  color: white;
+}
+.eventbutton,
+.hoverappear,
+.eventbutton-ended:hover {
+  cursor: pointer;
+}
+.eventbutton {
+  font-size: 11px;
+  font-weight: 500;
+  border: #2ed47a 2px solid;
+  background: #2ed47a;
+  border-radius: 10%;
+  color: white;
 }
 .callbar_layer5 {
   /* border: rgb(69, 153, 31) 2px solid; */
   flex-basis: 33.3%;
-  margin: 2% 4% 2% 4%;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  margin: 0 12px;
 }
 .eventbar_layer5 {
   /* border: rgb(35, 136, 131) 2px solid; */
   flex-basis: 33.3%;
-  margin: 2% 4% 8% 4%;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  margin: 0 12px;
 }
 
 .deals-task_layer3 {
@@ -177,18 +418,137 @@ body {
 }
 .deals_layer4 {
   /* border: rgb(0, 113, 128) solid 2px; */
+  background-color: #ffffff;
 }
 .bigdeals-svg {
-  padding: 25% 4% 4% 4%;
+  padding: 4% 4% 4% 4%;
+}
+.bluecircle {
+  margin-left: 9px;
+  margin-top: 2.5px;
 }
 .dealsBottom {
 }
 .dealsgraph {
   font-size: x-small;
+  display: flex;
 }
 .closeddeals {
-  font-size: x-small;
+  margin-left: 1px;
+  font: poppins;
+}
+.dealsTop {
+  display: flex;
+  justify-content: space-between;
+}
+.dealsonmain {
+  font-family: Poppins;
+  font-size: 15px;
+  margin-left: 9px;
+}
+.showmonthly {
+  font-family: Poppins;
+  display: flex;
+  margin-left: 9px;
+  font-size: 12px;
+  flex-wrap: nowrap;
+}
+.show {
+  color: #6a707e;
+  margin-right: 1.5px;
+}
+.monthly {
+  color: #109cf1;
+  padding-right: 5px;
+}
+.monthly:hover {
+  cursor: pointer;
 }
 .task_layer4 {
   /* border: rgb(128, 0, 0) solid 2px; */
+  background-color: #ffffff;
+}
+.taskBottom {
+  display: flex;
+  padding-top: 30px;
+}
+.piesvg {
+  flex-basis: 70%;
+  padding-left: 14%;
+}
+.pielegend {
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.legend {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.legendtext {
+  font-size: 10px;
+  margin-left: 2px;
+}
+@media (max-width: 820px) {
+  .sidebar_layer1 {
+    display: none;
+  }
+}
+
+@media (max-width: 470px) {
+  .mainbar_layer2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+  }
+  .daybar {
+    display: none;
+  }
+  .calender_layer3 {
+    width: 100vw;
+  }
+  .deals-task_layer3 {
+    width: 100vw;
+    margin-top: 15px;
+  }
+  .html {
+    background-color: #109cf1;
+  }
+  .dealsBottom {
+  }
+  .dealsTop {
+    margin-right: 6%;
+    margin-left: -4%;
+  }
+}
+.rightfoot {
+  display: flex;
+}
+.hoverappear {
+  display: flex;
+  /* padding-left: 113px; */
+  opacity: 0;
+}
+.eventbar_layer5,
+.callbar_layer5,
+.reminderbar_layer5:hover {
+  cursor: pointer;
+}
+
+.reminderbar_layer5:hover .hoverappear {
+  cursor: pointer;
+  opacity: 1;
+}
+.eventbar_layer5:hover .hoverappear {
+  cursor: pointer;
+  opacity: 1;
+}
+.callbar_layer5:hover .hoverappear {
+  cursor: pointer;
+  opacity: 1;
+}
+.toggle,
+.settings:hover {
+  cursor: pointer;
 }
